@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+
+
+    <title>Document</title>
+
+
+<!--input 옮기기-->
+
+<script>
+<!--
+function checkfunction()
+{
+ with(document.all)
+ {
+
+  for(i=0; i<a.length; i++)
+  {
+   if(a[i].checked==true)
+   {
+    content.value = a[i].value;
+   }
+  }
+ }
+}
+//-->
+</script>
+
+
+
+
+
+
+    <SCRIPT LANGUAGE="JavaScript">
+        <!--
+        function chkMailFrm() {
+         var f = document.formmail;
+          if (!f.senduser.value) {
+          alert("이름을 입력해주세요");
+          f.senduser.focus();
+          return false;
+         }
+
+         if (!f.age.value) {
+          alert("나이를 입력해주세요");
+          f.phone.focus();
+          return false;
+         }
+
+         if (!f.startup.value) {
+          alert("창업종목을 입력해주세요");
+          f.phone.focus();
+          return false;
+         }
+
+         if (!f.phone.value) {
+          alert("전화번호을 입력해주세요");
+          f.phone.focus();
+          return false;
+         }
+         if (!f.email.value) {
+          alert("이메일을 입력해주세요");
+          f.email.focus();
+          return false;
+         }
+        }
+        //-->
+        </SCRIPT>
+        
+
+
+</head>
+<body>
+    
+    <form name="formmail" method="get" action="data.php" onSubmit="return chkMailFrm()">
+        <a name=01></a>
+        <table width="0" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td><table width="0" border="0" cellspacing="0" cellpadding="0" >
+              <tr>
+                <td></td>
+                <td width="525" align="center">
+  
+                   
+
+
+
+
+  
+                <table width="100" border="0" cellpadding="0" cellspacing="5" style="margin-top:30px;">
+  <!--
+                      <h4>버튼 클릭시 신청 창으로 이동합니다.</h4>
+  
+                  <input type="radio" name="cheak" value="자식창 열기" id="정책자금" onclick="openNewWindow(); checkOnlyOne(this);">정책자금
+                  <input type="radio" name="cheak" style="margin-left:8px;" value="자식창 열기" id="소상공인" onclick="openNewWindow1(); checkOnlyOne(this);">소상공인
+                  <input type="radio" name="cheak" style="margin-left:8px;" value="자식창 열기"  id="창업자금" onclick="openNewWindow2(); checkOnlyOne(this);">창업자금
+                  <input type="radio" name="cheak" style="margin-left:8px;" value="자식창 열기" id="은전자금" onclick="openNewWindow3(); checkOnlyOne(this);">운전자금
+                  <input type="radio" name="cheak" style="margin-left:8px;" value="자식창 열기" id="시설자금" onclick="openNewWindow4(); checkOnlyOne(this); ">시설자금
+  
+  -->                <span id="process"></span><span id="result"></span>
+  
+                     <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+  
+  
+        <script id="rendered-js" >
+  function checkOnlyOne(element) {
+  
+    const checkboxes =
+    document.getElementsByName("a");
+  
+    checkboxes.forEach(cb => {
+      cb.checked = false;
+    });
+  
+    element.checked = true;
+  }
+  //# sourceURL=pen.js
+      </script>
+  
+  
+  
+    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+  
+  
+  
+
+
+    <input type='radio' name='a'  value='정책자금'  onclick='javascript:checkfunction()'/> 정책자금
+             
+    <input type='radio'   name='a'  value='소상자금'  onclick='javascript:checkfunction()'/> 소상자금
+
+    <input type='radio' name='a'  value='창업자금'  onclick='javascript:checkfunction()'/> 창업자금
+             
+    <input type='radio'   name='a'  value='운전자금'  onclick='javascript:checkfunction()'/> 운전자금
+
+    <input type='radio' name='a'  value='시설자금'  onclick='javascript:checkfunction()'/> 시설자금
+             
+  
+    
+  <!-- <div id='result'></div>-->
+
+           <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+
+
+           <script id="rendered-js" >
+     function getCheckboxValue(event) {
+       let result1 = '';
+       if (event.target.checked) {
+         result = event.target.value;
+       } else {
+         result1 = '';
+       }
+     
+       document.getElementById('result1').innerText =
+       result;
+     }
+     //# sourceURL=pen.js
+         </script>
+     
+       
+     
+       <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+
+
+
+
+
+  
+                  <tr style="border-bottom: 10px solid transparent;">
+                    <td align="left"><p style="width: 32px; margin: 0 5px 0px  ;">성함</p></td>
+                    <td align="left"><input type="text" style=" border-radius: 7px; BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 350px; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 30px" name="senduser"
+                     size="32" /></td>
+                  </tr>
+                  <tr style="border-bottom: 10px solid transparent;">
+                    <td align="left"><p style="width: 50px; margin: 0 5px  0px ;">핸드폰</p></td>
+                    <td align="left"><input type="text" style=" border-radius: 7px; BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 350px; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 30px" name="phone"
+                     size="32" /></td>
+                  </tr>
+                  <tr style="border-bottom: 10px solid transparent;">
+                    <td align="left"><p style="width: 50px; margin: 0 5px 0px ;">이메일</p></td>
+                    <td align="left"><input type="text" style="border-radius: 7px;  BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 350px; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 30px" name="email"
+                     size="32"/></td>
+                  </tr>
+  
+                  <tr style="border-bottom: 10px solid transparent;">
+                    <td align="left"><font ><p style="width: 32px; margin: 0 5px 0px ;">나이</p> </font></td>
+                    <td align="left"><input type="text" style="border-radius: 7px;  BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 350px; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 30px" name="age"
+                     rows="5" cols="26"></input></td>
+                  </tr>
+  
+                      <tr>
+    <td align="left" height="40" width="80">
+    <font color="#000" style=" width: 32px; margin: 0 5px 0px ;">성별</font></td>
+    <td width="316">
+    <input type="radio" value="male" name="sex">남자
+    <input type="radio" value="female" name="sex" > 여자</td>
+   </tr>
+  
+                  <tr style="border-bottom: 10px solid transparent;">
+                    <td align="left">
+                        <font ><p style="width: 70px; margin: 0 5px 0px ;">창업 종목</p> </font>
+                    </td>
+                    <td align="left">
+                       <input type="text" id='result1' style="font-weight: 900; background: white; border-radius: 7px;  BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 350px; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 30px" name="content" rows="5" cols="26">
+                    </td>
+                  </tr>
+  
+  
+  
+                  <tr style="border-bottom: 10px solid transparent;">
+                    <td align="left"><font ><p style="width: 32px; margin: 0 5px 0px ;">내용</p> </font></td>
+                    <td align="left"><textarea style="border-radius: 7px;  BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 350px; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 198px" name="body"
+                     rows="5" cols="26"></textarea></td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td  align="right"><input name="submit" type="image" value="신청하기" src= "submit.png"   style="width: 130px;" />
+  
+                      <!--<a onclick="reset();" style="height:40px;"><img src="images/can.jpg"  border="0" /></a>-->
+                    </td>
+                  </tr>
+  
+                </table>
+            </td>
+                <td>
+  
+                </td>
+              </tr>
+            </table>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+        </form>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+
+
+    <title>Document</title>
+
+
+
+
+    <SCRIPT LANGUAGE="JavaScript">
+        <!--
+        function chkMailFrm() {
+         var f = document.formmail;
+          if (!f.senduser.value) {
+          alert("이름을 입력해주세요");
+          f.senduser.focus();
+          return false;
+         }
+
+         if (!f.age.value) {
+          alert("나이를 입력해주세요");
+          f.phone.focus();
+          return false;
+         }
+
+         if (!f.startup.value) {
+          alert("창업종목을 입력해주세요");
+          f.phone.focus();
+          return false;
+         }
+
+         if (!f.phone.value) {
+          alert("전화번호을 입력해주세요");
+          f.phone.focus();
+          return false;
+         }
+         if (!f.email.value) {
+          alert("이메일을 입력해주세요");
+          f.email.focus();
+          return false;
+         }
+        }
+        //-->
+        </SCRIPT>
+        
+
+
+</head>
+<body style="background:darkgray;">
+    <form name="formmail" method="get" action="data.php" onSubmit="return chkMailFrm()">
+        <a name=01></a>
+        <table width="0" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td><table width="0" border="0" cellspacing="0" cellpadding="0" >
+              <tr>
+                <td></td>
+                <td width="525" align="center">
+  
+  
+  
+  
+                <table width="100" border="0" cellpadding="0" cellspacing="5" style="margin-top:30px;">
+  
+  
+                  
+                  
+  
+                  <span id="process"></span><span id="result"></span>
+  
+  
+  
+                  <tr style="border-bottom: 10px solid transparent;">
+                    <td align="left"><p style="width: 32px; margin: 0 5px 0px  ;">성함</p></td>
+                    <td align="left"><input type="text" style=" border-radius: 7px; BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 350px; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 30px" name="senduser"
+                     size="32" /></td>
+                  </tr>
+                  <tr style="border-bottom: 10px solid transparent;">
+                    <td align="left"><p style="width: 50px; margin: 0 5px  0px ;">핸드폰</p></td>
+                    <td align="left"><input type="text" style=" border-radius: 7px; BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 350px; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 30px" name="phone"
+                     size="32" /></td>
+                  </tr>
+                  <tr style="border-bottom: 10px solid transparent;">
+                    <td align="left"><p style="width: 50px; margin: 0 5px 0px ;">이메일</p></td>
+                    <td align="left"><input type="text" style="border-radius: 7px;  BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 350px; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 30px" name="email"
+                     size="32"/ ></></td>
+                  </tr>
+  
+                  <tr style="border-bottom: 10px solid transparent;">
+                    <td align="left"><font ><p style="width: 32px; margin: 0 5px 0px ;">나이</p> </font></td>
+                    <td align="left"><input type="text" style="border-radius: 7px;  BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 350px; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 30px" name="age"
+                     rows="5" cols="26"></input></td>
+                  </tr>
+ 
+ <tr>
+  <td align="left" height="22" width="90" bgcolor="">
+  <font color="#000">성별</font></td>
+  <td width="316">
+  <input type="radio" value="male" name="sex">남자
+  <input type="radio" value="female" name="sex" > 여자</td>
+ </tr>
+  
+                  <tr style="border-bottom: 10px solid transparent;">
+                    <td align="left"><font ><p style="width: 70px; margin: 0 5px 0px ;">창업 종목</p> </font></td>
+                    <td align="left"><input style="border-radius: 7px;  BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 350px; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 30px" name="startup"
+                     rows="5" cols="26" value="정책자금" readonly></input></td>
+                  </tr>
+  
+  
+  
+                  <tr style="border-bottom: 10px solid transparent;">
+                    <td align="left"><font ><p style="width: 32px; margin: 0 5px 0px ;">내용</p> </font></td>
+                    <td align="left"><textarea style="border-radius: 7px;  BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 350px; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 198px" name="body"
+                     rows="5" cols="26"></textarea></td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td  align="right"><input name="submit" type="image" value="신청하기" src= "/submit.png"   style="width: 130px;" />
+  
+                      <!--<a onclick="reset();" style="height:40px;"><img src="/submit.png"  border="0" /></a>-->
+                    </td>
+                  </tr>
+                </table>
+            </td>
+                <td>
+  
+                </td>
+              </tr>
+            </table>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+        </form>
+  
+</body>
+</html>

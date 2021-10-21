@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+<script>
+<!--
+function checkfunction()
+{
+ with(document.all)
+ {
+
+  for(i=0; i<a.length; i++)
+  {
+   if(a[i].checked==true)
+   {
+    content.value = a[i].value;
+   }
+  }
+ }
+}
+//-->
+</script>
+ </HEAD>
+ <BODY>
+  <input type='radio' name='a' value='가' onclick='javascript:checkfunction()'> 가
+  <input type='radio' name='a' value='나' onclick='javascript:checkfunction()'> 나
+  <input type='text' name='content'>
+ </BODY>
+</HTML>
